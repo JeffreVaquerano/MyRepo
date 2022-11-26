@@ -5,6 +5,8 @@
 // Siempre que es archivo local usar el ./
 import classes from './App.module.scss';
 import Header from './components/Header/Header';
+import Feed from './components/Feed/Feed';
+import Footer from './components/Footer/Footer';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -13,8 +15,10 @@ function App() {
     <div className={classes ["App"]}>
       {/* Header*/}
       <Header />
-      {/* Main*/}
-      {/* Footer*/}
+      <main>
+        <Feed />
+      </main>
+      <Footer />
     </div>
   );
 }
